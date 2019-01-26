@@ -102,7 +102,7 @@ model.add(Dense(num_classes))
 model.add(Activation('softmax'))
 '''
 # Compile model
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # 0-1 mapping fron 0 -255
 x_train = x_train.astype('float32')
